@@ -1,57 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 html,
-body{
-    overflow-x:hidden;
+body {
+    overflow-x: hidden;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+    font-family: "Poppins", sans-serif;
 }
 
-#Logo{
+#Logo {
     object-fit: cover !important;
-    width:20rem !important;
-    height:6rem !important;
+    width: 20rem !important;
+    height: 6rem !important;
 }
 
-.navbar-brand{
-    padding:0 !important;
+.navbar-brand {
+    padding: 0 !important;
 }
 
-.active{
-    padding:0 !important;
+.active {
+    padding: 0 !important;
 }
 
-#navItems{
+#navItems {
     font-weight: bolder;
-    margin-right:150px !important;
+    margin-right: 150px !important;
     font-size: 1.4rem;
-    
 }
 
-#navItems li{
-    margin:0 11px !important;
-    cursor:pointer;
-    transition: .19s;
+#navItems li {
+    margin: 0 11px !important;
+    cursor: pointer;
+    transition: 0.19s;
 }
 
-#navItems li:nth-child(1){
+#navItems li:nth-child(1) {
     border-bottom: 3.5px solid #420fea;
 }
 
-#navItems li:hover{
+#navItems li:hover {
     border-bottom: 3.5px solid #420fea;
 }
 
-#navBack{
+#navBack {
     background-color: white !important;
 }
 
@@ -60,265 +59,300 @@ body{
     width:100%;
 } */
 
-#container{
-    height:100vh;
-    overflow:hidden;
+#container {
+    height: 100vh;
+    overflow: hidden;
     background-size: cover;
-    background-image:url('https://i.postimg.cc/5NLZMmwY/SUITS-SHOP.jpg');
+    background-image: url("https://i.postimg.cc/5NLZMmwY/SUITS-SHOP.jpg");
     background-color: transparent;
     object-fit: cover;
 }
 
-#headingMain{
-    width:100% !important;
-    height:100% !important;
+#headingMain {
+    width: 100% !important;
+    height: 100% !important;
 }
 
-#header{
-    width:100% !important;
-    height:100% !important;
+#header {
+    width: 100% !important;
+    height: 100% !important;
     font-size: 5.4rem !important;
 }
 
-.row{
-    width:100%;
-    height:100%;
+.row {
+    width: 100%;
+    height: 100%;
 }
 
-.mt-5{
-    color:#ffffff;
+.mt-5 {
+    color: #ffffff;
     font-family: cursive;
     border-bottom: 4.5px solid #0051ff !important;
 }
 
-#seeMore{
-    width:11rem;
-    border:3px solid black;
+#seeMore {
+    width: 11rem;
+    border: 3px solid black;
     background-color: #420fea;
-    color:white;
+    color: white;
     font-weight: bold;
-    padding:10px;
-    transition: .2s;
+    padding: 10px;
+    transition: 0.2s;
     border-radius: 10px;
 }
 
-#seeMore:hover{
+#seeMore:hover {
     background-color: white;
-    color:#420fea
+    color: #420fea;
 }
 
-#seeMore:active{
-    color:white;
+#seeMore:active {
+    color: white;
     background-color: #420fea;
-    opacity: .8;
+    opacity: 0.8;
 }
 
-i{
+i {
     cursor: pointer;
 }
 
-.fa-phone{
-    color:black;
-    cursor:pointer;
+.fa-phone {
+    color: black;
+    cursor: pointer;
 }
-.fa-phone:hover{
-    color:rgb(0, 255, 0);
+.fa-phone:hover {
+    color: rgb(0, 255, 0);
 }
-.fa-instagram{
-    color:rgb(0, 0, 0);
-    cursor:pointer;
+.fa-instagram {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
 }
-.fa-instagram:hover{
+.fa-instagram:hover {
     color: transparent;
-    background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(
+        30% 107%,
+        circle,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    background: -webkit-radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
     background-clip: text;
     -webkit-background-clip: text;
 }
-.fa-facebook{
-    color:black;
-    cursor:pointer;
+.fa-facebook {
+    color: black;
+    cursor: pointer;
 }
-.fa-facebook:hover{
-    color:rgb(0, 255, 0);
+.fa-facebook:hover {
+    color: rgb(0, 255, 0);
 }
-.fa-youtube{
-    color:black;
-    cursor:pointer;
+.fa-youtube {
+    color: black;
+    cursor: pointer;
 }
-.fa-youtube:hover{
-    color:rgb(255, 0, 0);
+.fa-youtube:hover {
+    color: rgb(255, 0, 0);
 }
-.fa-telegram{
-    color:black;
-    cursor:pointer;
+.fa-telegram {
+    color: black;
+    cursor: pointer;
 }
-.fa-telegram:hover{
-    color:rgb(0, 85, 255);
+.fa-telegram:hover {
+    color: rgb(0, 85, 255);
 }
-.fa-envelope{
-    color:black;
-    cursor:pointer;
+.fa-envelope {
+    color: black;
+    cursor: pointer;
 }
-.fa-envelope:hover{
-    color:rgb(255, 196, 0);
+.fa-envelope:hover {
+    color: rgb(255, 196, 0);
 }
-.fa-linkedin{
-    color:black;
-    cursor:pointer;
+.fa-linkedin {
+    color: black;
+    cursor: pointer;
 }
-.fa-linkedin:hover{
-    color:rgb(0, 192, 156);
+.fa-linkedin:hover {
+    color: rgb(0, 192, 156);
 }
-.fa-twitter{
-    color:black;
-    cursor:pointer;
+.fa-twitter {
+    color: black;
+    cursor: pointer;
 }
-.fa-twitter:hover{
-    color:rgb(0, 223, 197);
+.fa-twitter:hover {
+    color: rgb(0, 223, 197);
 }
 /* YES */
-.phone{
-    color:black;
-    cursor:pointer;
+.phone {
+    color: black;
+    cursor: pointer;
 }
-.phone:hover{
-    color:rgb(0, 255, 0);
+.phone:hover {
+    color: rgb(0, 255, 0);
 }
-.instagram{
-    color:black;
-    cursor:pointer;
+.instagram {
+    color: black;
+    cursor: pointer;
 }
-.instagram:hover{
+.instagram:hover {
     color: transparent;
-  background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background-clip: text;
-  -webkit-background-clip: text;
+    background: -webkit-radial-gradient(
+        30% 107%,
+        circle,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    background: -webkit-radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
 }
-.facebook{
-    color:black;
-    cursor:pointer;
+.facebook {
+    color: black;
+    cursor: pointer;
 }
-.facebook:hover{
-    color:rgb(0, 106, 255);
+.facebook:hover {
+    color: rgb(0, 106, 255);
 }
-.youtube{
-    color:black;
-    cursor:pointer;
+.youtube {
+    color: black;
+    cursor: pointer;
 }
-.youtube:hover{
-    color:rgb(255, 0, 0);
+.youtube:hover {
+    color: rgb(255, 0, 0);
 }
-.telegram{
-    color:black;
-    cursor:pointer;
+.telegram {
+    color: black;
+    cursor: pointer;
 }
-.telegram:hover{
-    color:rgb(0, 94, 255);
+.telegram:hover {
+    color: rgb(0, 94, 255);
 }
-.envelope{
-    color:black;
-    cursor:pointer;
+.envelope {
+    color: black;
+    cursor: pointer;
 }
-.envelope:hover{
-    color:rgb(229, 255, 0);
+.envelope:hover {
+    color: rgb(229, 255, 0);
 }
-.linkedin{
-    color:black;
-    cursor:pointer;
+.linkedin {
+    color: black;
+    cursor: pointer;
 }
-.linkedin:hover{
-    color:rgb(0, 179, 255);
+.linkedin:hover {
+    color: rgb(0, 179, 255);
 }
-.twitter{
-    color:black;
-    cursor:pointer;
+.twitter {
+    color: black;
+    cursor: pointer;
 }
-.twitter:hover{
-    color:rgb(0, 183, 255);
+.twitter:hover {
+    color: rgb(0, 183, 255);
 }
 
-#card{
-    height:45vh !important;
+#card {
+    height: 45vh !important;
 }
 
 /* #myContainer{
     border:4px solid black;
 } */
 
-#col{
-    height:45vh;
-    border:4px solid black;
+#col {
+    height: 45vh;
+    border: 4px solid black;
 }
 
-#productImage{
-    height:37rem;
+#productImage {
+    height: 37rem;
     object-fit: fill;
 }
 
-#addToCart{
-    border:2.9px solid black;
+#addToCart {
+    border: 2.9px solid black;
     font-weight: bold;
 }
-#addToCart:hover{
-    border:2.9px solid black;
+#addToCart:hover {
+    border: 2.9px solid black;
     font-weight: bold;
-    color:rgb(13,202,240) !important;
+    color: rgb(13, 202, 240) !important;
     background-color: black;
     cursor: pointer;
 }
-#addToCart:active{
-    opacity: .8;
+#addToCart:active {
+    opacity: 0.8;
 }
 
-#irreplacableHeader{
-    border:3px solid black;
+#irreplacableHeader {
+    border: 3px solid black;
 }
 
-#itemm{
-    border-right:3px solid black;
+#itemm {
+    border-right: 3px solid black;
 }
 
-#add{
+#add {
     font-weight: bold !important;
-    font-size:1rem !important;
+    font-size: 1rem !important;
     background-color: rgb(0, 85, 255);
-    border:3px solid black;
+    border: 3px solid black;
 }
-#quantity{
-    padding:1rem;
-    display:flex;
+#quantity {
+    padding: 1rem;
+    display: flex;
     align-items: center;
 }
-#minus{
-    font-size:1rem !important;
+#minus {
+    font-size: 1rem !important;
     font-weight: bold !important;
     background-color: red;
-    border:3px solid black;
+    border: 3px solid black;
 }
 
-#productTitle{
-    border:1px solid black;
+#productTitle {
+    border: 1px solid black;
 }
-#img{
-    border:1px solid black;
+#img {
+    border: 1px solid black;
 }
-#productPrice{
-    border:1px solid black;
+#productPrice {
+    border: 1px solid black;
 }
-#actions{
-    border:1px solid black;
+#actions {
+    border: 1px solid black;
 }
 
-@media (max-width:992px){
-    #myContainer{
+#smolImage{
+    width:2rem;
+    height:2rem;
+}
+
+@media (max-width: 992px) {
+    #myContainer {
         display: flex !important;
         flex-direction: column !important;
-        width:100% !important;
+        width: 100% !important;
     }
 }
