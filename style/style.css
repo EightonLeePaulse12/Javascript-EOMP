@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body{
+    overflow-x:hidden;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+#Logo{
+    object-fit: cover !important;
+    width:20rem !important;
+    height:6rem !important;
+}
+
+.navbar-brand{
+    padding:0 !important;
+}
+
+.active{
+    padding:0 !important;
+}
+
+#navItems{
+    font-weight: bolder;
+    margin-right:150px !important;
+    font-size: 1.4rem;
+    
+}
+
+#navItems li{
+    margin:0 11px !important;
+    cursor:pointer;
+}
+
+#navItems li:nth-child(1){
+    border-bottom: 3.5px solid #420fea;
+}
+
+#navItems li:hover{
+    border-bottom: 3.5px solid #420fea;
+}
+
+#navBack{
+    background-color: white !important;
+}
+
+main{
+    height:84.9vh;
+    width:100%;
+    border:1px solid black;
+}
+
+#container{
+    height:84.6vh;
+    overflow:hidden;
+    background-image:url('https://i.postimg.cc/5NLZMmwY/SUITS-SHOP.jpg');
+    background-color: transparent;
+}
+
+#headingMain{
+    width:100% !important;
+    height:100% !important;
+}
+
+#header{
+    width:100% !important;
+    height:100% !important;
+    font-size: 5.4rem !important;
+}
+
+.row{
+    width:100%;
+    height:100%;
+}
+
+.mt-5{
+    color:#ffffff;
+    font-family: cursive;
+    border-bottom: 4.5px solid #0051ff !important;
+}
