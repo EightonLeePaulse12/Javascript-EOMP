@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Superior Clothing</title>
+    <title>Products - Superior Clothing</title>
+    <link rel="shortcut icon" href="../images/images.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/style.css" />
     <link
       rel="stylesheet"
@@ -42,19 +43,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul id="navItems" class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" href="#">Products</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Admin</a>
+                  <a class="nav-link active" href="./admin.html">Admin</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active">About Us</a>
+                  <a class="nav-link active" href="./about.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active">Contact Us</a>
+                  <a class="nav-link active" href="./contact.html">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -62,7 +63,102 @@
         </nav>
       </header>
 
-      <main></main>
+      <main>
+
+        <figure class="text-center">
+            <blockquote class="blockquote">
+              <h3 class="fs-1 fw-bold">Products</h3>
+            </blockquote>
+          </figure>
+
+          <div class="card-group mb-3">
+            <div class="card">
+              <img id="productImage" src="https://i.postimg.cc/qR9rPmCZ/Mens-Poker-Skeleton-Hand-Graphics-Street-100-Cotton-Short-Sleeve-T-Shirt-Black-S.png" class="card-img-top" alt="Black Tee">
+              <div class="card-body">
+                <h5 class="card-title fw-bold" id="title">Black Cotton T-shirt</h5>
+                <p class="card-text" id="description">This is a cotton black T-shirt that will ensure that you get maximum comfort in Summer.</p>
+                <p class="card-text" id="price">R279.99</p>
+                <button type="button" id="addToCart" class="btn btn-info">Add To Cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <img id="productImage" src="https://i.postimg.cc/k4WY5wpH/Drop-Shoulder-Hoodie-with-Slit-Beige-2-XL.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold" id="title">White Cotton hoodie</h5>
+                <p class="card-text" id="description">This is a comfortable cotton white hoodie, a very vibrant white for that matter. It ensures warmth and great casual style.</p>
+                <p class="card-text" id="price">R949.99</p>
+                <button type="button" id="addToCart" class="btn btn-info">Add To Cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <img id="productImage" src="https://i.postimg.cc/0yqQMNjH/Chalecos-acolchados-con-capucha-y-sin-mangas-de-color-s-lido-con-bolsillo-y-cremallera-de-color-s-li.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold" id="title">Black Sleeveless Puffer Jacket</h5>
+                <p class="card-text" id="description">This body warmer will keep you comfortable and keep you looking fresh at the same time.This will definitely be a wonderful fit to your winter wardrobe.</p>
+                <p class="card-text" id="price">R449.99</p>
+                <button type="button" id="addToCart" class="btn btn-info">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-group">
+            <div class="card">
+              <img id="productImage" src="https://i.postimg.cc/MZ5nPBGy/BOSS-Men-s-Tracksuit-Pants-Black.jpg" class="card-img-top" alt="...">
+              <div class="...card-body">
+                <h5 class="card-title fw-bold" id="title">Black BOSS Tracksuit Pants</h5>
+                <p class="card-text" id="description">This comfortable and stylish tracksuit pants will make it so that you never complain about the weather during Winter. It is not only stylish, it also it very comfortable in the gym!</p>
+                <p class="card-text" id="price">R279,99</p>
+                <button type="button" id="addToCart" class="btn btn-info">Add To Cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <img id="productImage" src="https://i.postimg.cc/gJPPnjGk/Plaid-Button-Front-Brushed-Hooded-Jacket-Purple-2-XL.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold" id="title">Black T-shirt</h5>
+                <p class="card-text" id="description">This is a cotton black T-shirt that will ensure that you get maximum comfort in Summer.</p>
+                <p class="card-text" id="price">R279,99</p>
+                <button type="button" id="addToCart" class="btn btn-info">Add To Cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <img id="productImage" src="https://i.postimg.cc/Jz1DB74x/Waist-Tie-Active-Shorts-Blue-12.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold" id="title">Black T-shirt</h5>
+                <p class="card-text" id="description">This is a cotton black T-shirt that will ensure that you get maximum comfort in Summer.</p>
+                <p class="card-text" id="price">R279,99</p>
+                <button type="button" id="addToCart" class="btn btn-info">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header fw-bold d-flex justify-content-center fs-3">
+              Cart
+            </div>
+            <div class="card-body" id="theDiv">
+              <!-- <blockquote class="blockquote mb-0">
+                <p>A well-known quote, contained in a blockquote element.</p>
+                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote> -->
+              <div class="row d-flex justify-content-between" id="irreplacableHeader">
+                <div class="col fw-bold" id="itemm">Title</div>
+                <div class="col fw-bold" id="itemm">Image</div>
+                <div class="col fw-bold" id="itemm">Price</div>
+                <div class="col fw-bold" id="itemm">Actions</div>
+              </div>
+              <div class="row d-flex justify-content-between" id="cartDiv">
+                <div class="col fw-bold d-flex align-items-center justify-content-center" id="productTitle">Title goes here</div>
+                <div class="col fw-bold d-flex align-items-center justify-content-center" id="img">img goes here</div>
+                <div class="col fw-bold d-flex align-items-center justify-content-center" id="productPrice">price goes here</div>
+                <div class="col fw-bold d-flex align-items-center justify-content-center" id="actions">
+                  <button class="btn" id="minus">-</button>
+                  <h5 id="quantity">1</h5>
+                  <button class="btn" id="add">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
 
       <footer>
         <div class="card text-center fs-2 fw-bold bg-white d-flex">
@@ -79,11 +175,7 @@
                 <h5 class="card-text telegram"><i class="fas fa fa-brands fa-telegram"></i> Telegram</h5>
                 <h5 class="card-text youtube"><i class="fas fa fa-brands fa-youtube"></i> YouTube</h5>
                 <h5 class="card-text envelope"><i class="fas fa fa-sharp fa-light fa-envelope"></i> E-mail Us</h5>
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
               </div>
-            <!-- <div class="card-footer text-body-secondary">
-              2 days ago
-            </div> -->
           </div>
     </footer>
     <script src="../script/code.js"></script>

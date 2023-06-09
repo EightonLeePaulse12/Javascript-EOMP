@@ -55,10 +55,10 @@ body{
     background-color: white !important;
 }
 
-main{
+/* main{
     height:100vh;
     width:100%;
-}
+} */
 
 #container{
     height:100vh;
@@ -241,4 +241,84 @@ i{
 }
 .twitter:hover{
     color:rgb(0, 183, 255);
+}
+
+#card{
+    height:45vh !important;
+}
+
+/* #myContainer{
+    border:4px solid black;
+} */
+
+#col{
+    height:45vh;
+    border:4px solid black;
+}
+
+#productImage{
+    height:37rem;
+    object-fit: fill;
+}
+
+#addToCart{
+    border:2.9px solid black;
+    font-weight: bold;
+}
+#addToCart:hover{
+    border:2.9px solid black;
+    font-weight: bold;
+    color:rgb(13,202,240) !important;
+    background-color: black;
+    cursor: pointer;
+}
+#addToCart:active{
+    opacity: .8;
+}
+
+#irreplacableHeader{
+    border:3px solid black;
+}
+
+#itemm{
+    border-right:3px solid black;
+}
+
+#add{
+    font-weight: bold !important;
+    font-size:1rem !important;
+    background-color: rgb(0, 85, 255);
+    border:3px solid black;
+}
+#quantity{
+    padding:1rem;
+    display:flex;
+    align-items: center;
+}
+#minus{
+    font-size:1rem !important;
+    font-weight: bold !important;
+    background-color: red;
+    border:3px solid black;
+}
+
+#productTitle{
+    border:1px solid black;
+}
+#img{
+    border:1px solid black;
+}
+#productPrice{
+    border:1px solid black;
+}
+#actions{
+    border:1px solid black;
+}
+
+@media (max-width:992px){
+    #myContainer{
+        display: flex !important;
+        flex-direction: column !important;
+        width:100% !important;
+    }
 }
