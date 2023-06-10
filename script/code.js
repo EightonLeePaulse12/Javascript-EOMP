@@ -29,11 +29,16 @@ addButton.forEach((data) => {
       </div>
         `);
     content.push(addToDiv);
+    let newContent = [...new Set(content)]
 
     localStorage.setItem('data',JSON.stringify(content))
 
+    
+
     addToHere.innerHTML = "";
-    addToHere.innerHTML += content;
+    addToHere.innerHTML += newContent;
+    content = []
+    content = [...new Set(content)]
 
     // if (content.includes(addToHere.innerHTML)) {
     //   alert("YOU HAVE ALREADY ADDED THIS TO CART");
