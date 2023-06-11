@@ -5,9 +5,11 @@ const addToHere = document.querySelector("#irreplacableHeader");
 const addButton = document.querySelectorAll("#addToCart");
 let buttons = [];
 let content = [];
+let prices = []
 
 addButton.forEach((data) => {
   console.log(data);
+
   data.addEventListener("click", (e) => {
     let target = e.target;
     let cart = addToHere.getElementsByTagName("cartDiv");
@@ -16,6 +18,7 @@ addButton.forEach((data) => {
     let source = imageTag.getAttribute("src");
     let test = data.firstChild.nextElementSibling;
     let price = test.nextElementSibling.nextElementSibling.innerText;
+    
     let title = data.firstChild.nextElementSibling.innerText;
     let addToDiv = (addToHere.innerHTML += `
         <div class="row d-flex justify-content-between" id="irreplacableHeader">
@@ -31,9 +34,56 @@ addButton.forEach((data) => {
     content.push(addToDiv);
     let newContent = [...new Set(content)]
 
+    console.log(newContent)
+
     localStorage.setItem('data',JSON.stringify(content))
 
     
+
+    console.log(total.innerText)
+
+    // console.log(price)
+
+    
+    // console.log(prices)
+
+
+    console.log(content)
+
+    content.forEach((e)=>{
+      // console.log(e.innerHTML.parentElement)
+      
+    })
+    
+    
+    
+    prices.forEach((pricee)=>{
+      console.log(prices)
+      console.log(price)
+      console.log(price[0])
+      console.log(price[1])
+      console.log(price[2])
+      console.log(price[3])
+      for(let i = 0;i < prices.length;i++){
+        console.log(i)
+      }
+      let newPrice = parseFloat(price.replace('R', ''))
+      console.log(newPrice)
+      const total = document.getElementById('total')
+      total.addEventListener('change',()=>{
+        content.forEach((e)=>{
+          console.log(e)
+          total.innerText = 'Total: ' + newPrice
+        })
+        
+      })
+    })
+    
+
+    // total.innerText = "Total: " + newPrice
+
+    // console.log(typeof newPrice)
+
 
     addToHere.innerHTML = "";
     addToHere.innerHTML += newContent;
@@ -54,10 +104,14 @@ addButton.forEach((data) => {
   });
 });
 
+console.log(price)
 
-const removeButton = document.getElementById('remove')
+prices.push(price)
 
-console.log(removeButton)
+
+// const removeButton = document.getElementById('remove')
+
+// console.log(removeButton)
 
 // removeButton.addEventListener('click',(e)=>{
 //   console.log(e.target)
