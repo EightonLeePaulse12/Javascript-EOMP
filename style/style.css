@@ -340,8 +340,21 @@ i {
 #productPrice {
     border: 1px solid black;
 }
-#actions {
-    /* border: 1px solid black; */
+.pressMe{
+    width:7rem;
+    height:2.5rem;
+    border:3px solid black;
+    color:black;
+    font-weight:bold;
+    background-color: #420fea;
+}
+.pressMe:hover{
+    background-color: black;
+    color:#420fea
+}
+
+.pressMe:active{
+    opacity: .7;
 }
 
 #smolImage{
@@ -373,7 +386,7 @@ i {
     width:2rem;
 }
 
-#remove{
+.remove{
     background-color: red;
     border:3px solid black;
     color:white;
@@ -382,9 +395,21 @@ i {
     border-radius: 5px;
 }
 
-#remove:hover{
+.remove:hover{
     opacity:.7;
 }
+
+.whyeven{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#adminImage{
+    height:2rem;
+    width:2rem;
+}
+
 
 @media (max-width: 992px) {
     #myContainer {

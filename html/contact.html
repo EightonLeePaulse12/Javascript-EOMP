@@ -43,19 +43,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul id="navItems" class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Products</a>
+                  <a class="nav-link active" href="./products.html">Products</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Admin</a>
+                  <a class="nav-link active" href="./admin.html">Admin</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active">About Us</a>
+                  <a class="nav-link active" href="./about.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active">Contact Us</a>
+                  <a class="nav-link active" href="#">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -65,9 +65,35 @@
 
 
       <main>
-        <div class="container">
 
-      </div>
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            <h3 class="fs-1 fw-bold">Contact Us</h3>
+          </blockquote>
+        </figure>
+
+                <form
+          action="https://formspree.io/f/xzbqnpqq"
+          method="POST"
+        >
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your E-mail Address">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Name and Surname</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Name and Surname">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Send us a message" rows="3"></textarea>
+        </div>
+          <!-- your other form fields go here -->
+          <div class="send d-flex justify-content-center align-items-center">
+          <button class="pressMe" type="submit">Submit</button>
+        </div>
+        </form>
+        
       </main>
 
       <footer>
