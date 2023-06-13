@@ -77,6 +77,8 @@ body {
     width: 100% !important;
     height: 100% !important;
     font-size: 5.4rem !important;
+    color: black;
+    text-shadow: 2px 2px white;
 }
 
 .row {
@@ -85,8 +87,9 @@ body {
 }
 
 .mt-5 {
-    color: #ffffff;
-    font-family: cursive;
+    color: black;
+    text-shadow: 2px 2px white;
+    /* font-family: cursive; */
     border-bottom: 4.5px solid #0051ff !important;
 }
 
@@ -399,17 +402,35 @@ i {
     opacity:.7;
 }
 
-.whyeven{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    /* .whyeven{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
 
 #adminImage{
     height:2rem;
     width:2rem;
 }
 
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#modalInputName{
+    margin-bottom:1rem;
+}
+#modalInputImage{
+    margin-bottom:1rem;
+}
+#modalInputDesc{
+    margin-bottom:1rem;
+}
+#modalInputPrice{
+    margin-bottom:1rem;
+}
 
 @media (max-width: 992px) {
     #myContainer {
