@@ -13,7 +13,7 @@ let wrapper = document.querySelector("#products");
 // PRODUCTS ARRAY OF OBJECTS
 let products = [
   {
-    id:1,
+    id: 1,
     name: "Black Cotton T-shirt",
     image:
       "https://i.postimg.cc/qR9rPmCZ/Mens-Poker-Skeleton-Hand-Graphics-Street-100-Cotton-Short-Sleeve-T-Shirt-Black-S.png",
@@ -21,7 +21,6 @@ let products = [
     price: "R279.99",
   },
   {
-    
     name: "White Cotton hoodie",
     image:
       "https://i.postimg.cc/k4WY5wpH/Drop-Shoulder-Hoodie-with-Slit-Beige-2-XL.jpg",
@@ -121,16 +120,10 @@ function displayData() {
 // ADD BUTTON'S FUNCTION
 
 function addData() {
-  // console.log("REACHED");
   const productName = document.querySelector("#modalInputName2");
-  // console.log(productName);
   const productImage = document.querySelector("#modalInputImage2");
-  // console.log(productImage);
   const productDesc = document.querySelector("#modalInputDesc2");
-  // console.log(productDesc);
   const productPrice = document.querySelector("#modalInputPrice2");
-  // console.log(productPrice);
-  // console.log(wrapper);
   // Save data
   let newContent = {
     name: productName.value,
@@ -140,7 +133,6 @@ function addData() {
   };
 
   products.push(newContent);
-  console.log(products);
   productName.value = "";
   productImage.value = "";
   productDesc.value = "";
@@ -154,11 +146,9 @@ function addData() {
 
 function pleaseEdit() {
   const saveButton = [...document.querySelectorAll("#save")];
-  console.log(saveButton);
   saveButton.forEach((ja, i) => {
-    console.log(ja);
     ja.addEventListener("click", (e) => {
-      e.preventDefault()
+      e.preventDefault();
       // let index = saveButton.indexOf(e.target)
       let changeName = [...document.querySelectorAll("#modalInputName")];
       let changeImage = [...document.querySelectorAll("#modalInputImage")];
@@ -167,11 +157,9 @@ function pleaseEdit() {
       let itemNames = [...document.querySelectorAll("#adminName")];
       let itemPrices = [...document.querySelectorAll("#adminPrice")];
       let itemImages = [...document.querySelectorAll("#adminImage")];
-      console.log(changeDesc[i]);
       let newName = (itemNames[i].innerText = changeName[i].value);
       let newPrice = (itemPrices[i].innerText = changePrice[i].value);
       let newImage = itemImages[i].setAttribute("src", changeImage.value);
-      console.log(products[i]);
       let newerContent = {
         name: newName,
         image: newImage,
@@ -180,8 +168,7 @@ function pleaseEdit() {
       };
 
       products[i] = newerContent;
-      console.log(products);
-      localStorage.setItem("productData",JSON.stringify(products))
+      localStorage.setItem("productData", JSON.stringify(products));
       wrapper.innerHTML = "";
       let modal = document.querySelector(".modal-backdrop");
       modal.style.display = "none";
@@ -194,14 +181,12 @@ function pleaseEdit() {
 function removeThingy() {
   const deleteButton = [...document.querySelectorAll("#remove")];
   deleteButton.forEach((nah, i) => {
-    // console.log(nah)
     nah.addEventListener("click", (e) => {
       let row = e.target.parentElement.parentElement;
       row.remove();
-      let i = deleteButton.indexOf(event.target)
-      products.splice(i,1);
+      let i = deleteButton.indexOf(event.target);
+      products.splice(i, 1);
       localStorage.setItem("productData", JSON.stringify(products));
-      console.log(products);
       wrapper.innerHTML = "";
       displayData();
     });

@@ -2,43 +2,27 @@ let data = JSON.parse(localStorage.getItem("productData"))
   ? JSON.parse(localStorage.getItem("productData"))
   : [];
 
-  // localStorage.setItem('cart',JSON.stringify(cartItems))
-JSON.parse(localStorage.getItem('cart'))
+JSON.parse(localStorage.getItem("cart"));
 
-console.log(data);
+let useForTotals = [];
 
+const backdropIssue = document.querySelector("#backdropIssue");
 
-
-const backdropIssue = document.querySelector('#backdropIssue')
-
-backdropIssue.addEventListener('click',()=>{
-  try{
-    const backdropProblem = document.querySelector('.modal-backdrop')
-    backdropProblem.style.display = 'none'
-  } catch(e){
-    alert(e)
-  } finally{
-    const backdropProblem = document.querySelector('.modal-backdrop')
-    backdropProblem.style.display = 'none'
+backdropIssue.addEventListener("click", () => {
+  try {
+    const backdropProblem = document.querySelector(".modal-backdrop");
+    backdropProblem.style.display = "none";
+  } catch (e) {
+    alert(e);
+  } finally {
+    const backdropProblem = document.querySelector(".modal-backdrop");
+    backdropProblem.style.display = "none";
   }
-})
-
-
-// `<div class="card">
-// <img id="productImage" src="https://i.postimg.cc/qR9rPmCZ/Mens-Poker-Skeleton-Hand-Graphics-Street-100-Cotton-Short-Sleeve-T-Shirt-Black-S.png" class="card-img-top" alt="Black Tee">
-// <div class="card-body">
-//   <h5 class="card-title fw-bold" id="title">Black Cotton T-shirt</h5>
-//   <p class="card-text" id="description">Black T-Shirt.</p>
-//   <p class="card-text" id="price">R279.99</p>
-//   <button type="button" id="addToCart" class="btn btn-info">Add To Cart</button>
-// </div>
-// </div>`
+});
 
 function displayProducts() {
   let container = document.querySelector("#container2");
   data.forEach((gimme, i) => {
-    // console.log(i)
-    console.log(gimme);
     container.innerHTML += `
       <div class="col">
         <div class="card h-100 shadow">
@@ -61,106 +45,130 @@ function displayProducts() {
   });
 }
 displayProducts();
-addToCart()
+addToCart();
 
-let cartItems = []
-
+let cartItems = [];
 
 function addToCart() {
-  const cartButton = [...document.querySelectorAll('#addToCart')]
-  const body = document.querySelector('#modalBody')
-  console.log(cartButton)
-  cartButton.forEach((buton,i)=>{
-    buton.addEventListener('click',(e)=>{
-      console.log(e.target)
-      body.innerHTML = ''
-      const cardBody = e.target.parentElement
-      console.log(cardBody)
-      const titlee = cardBody.firstElementChild
-      const descc = cardBody.firstElementChild.nextElementSibling
-      const img = cardBody.parentElement.firstChild.nextSibling.getAttribute('src')
-      console.log(img)
-      const price = cardBody.firstElementChild.nextElementSibling.nextElementSibling
+  const cartButton = [...document.querySelectorAll("#addToCart")];
+  const body = document.querySelector("#modalBody");
+  cartButton.forEach((buton, i) => {
+    buton.addEventListener("click", (e) => {
+      body.innerHTML = "";
+      const cardBody = e.target.parentElement;
+      const titlee = cardBody.firstElementChild;
+      const descc = cardBody.firstElementChild.nextElementSibling;
+      const img =
+        cardBody.parentElement.firstChild.nextSibling.getAttribute("src");
+      const price =
+        cardBody.firstElementChild.nextElementSibling.nextElementSibling;
       let product = {
-        name:titlee.innerText,
-        image:img,
-        desc:descc.innerText,
-        price:price.innerText
-      }
-      cartItems.push(product)
-      localStorage.setItem('cart',JSON.stringify(cartItems))
-      console.log(cartItems)
-      cartItems = [...new Set(cartItems)]
-      cartItems.forEach((luffy,i)=>{
-        // console.log(addHere)
-        // console.log(putHere)
+        name: titlee.innerText,
+        image: img,
+        desc: descc.innerText,
+        price: price.innerText,
+      };
+      cartItems.push(product);
+      localStorage.setItem("cart", JSON.stringify(cartItems));
+      cartItems = cartItems.filter((obj,index)=>{
+        return index === cartItems.findIndex(o => obj.name === obj.name)
+      })
+      cartItems.forEach((luffy, i) => {
         let newData = `
         <div class="row">
         <div class="col d-flex align-items-center justify-content-between" id="cartTitle">${luffy.name}</div>
         <div class="col d-flex align-items-center justify-content-between" id="cartImage"><img id="myPic" src="${luffy.image}"></div>
         <div class="col d-flex align-items-center justify-content-between" id="cartPrice">${luffy.price}</div>
         <div class="col d-flex align-items-center justify-content-between" id="actions">
-        <input type="number" name="cartQuantity" value="1" id="cartQuantity">
+        <input type="number" name="cartQuantity" value="1" onchange="updating()" id="cartQuantity">
         <button class="btn-danger" id="remove">Remove</button>
         </div>
       </div>
-        `
-        let putHere = document.querySelector('#modalBody')
-        // const boddas = document.querySelector('#modalBody')
-        let addHere = document.querySelector('#exampleModal')
-        console.log(addHere)
-        putHere.innerHTML += newData
-        // if(addHere.style.display == 'block'){
-        //   console.log("NOTHING IS HAPPENING")
-        // } 
-        //   // DO NOTHING
-        // }
-
-        console.log(addHere)
-        updateTotal()
-      })
-    })
-  })
+        `;
+        let putHere = document.querySelector("#modalBody");
+        let addHere = document.querySelector("#exampleModal");
+        putHere.innerHTML += newData;
+        updateTotal();
+      });
+    });
+  });
 }
 
-
-function updateTotal(){
-  const modalBody = document.querySelector('#modalBody')
-  if(modalBody.textContent.trim().length === 0){
-    console.log("THE DIV IS EMPTYYY")
-    const total = document.querySelector('.yesss')
-    total.innerHTML = "Total: R0.00"
-  } else{
-    console.log("THERE IS CONTENT HERE")
-    const total = document.querySelector('.yesss')
-    let hiThere = JSON.parse(localStorage.getItem('cart'))
-    // hiThere.forEach((data)=>{
-    //   let price = data.price
-    //   price = price.replace('R','')
-    //   price = Number(price)
-    //   console.log(data++)
-    //   console.log(typeof price)
-    //   total.innerHTML = "Total: " + data.price
-    // })
-    let sum = 0
-
-    hiThere.forEach(function(e){
-      let price = e.price
-      price = price.replace("R","")
-      price = Number(price)
-      let newSum = sum += e
-      total.innerHTML = "Total: " + newSum 
+function updateTotal() {
+  const modalBody = document.querySelector("#modalBody");
+  if (modalBody.textContent.trim().length === 0) {
+    const total = document.querySelector(".yesss");
+    total.innerHTML = "Total: R0.00";
+  } else {
+    const total = document.querySelector(".yesss");
+    let hiThere = JSON.parse(localStorage.getItem("cart"));
+    hiThere = hiThere.filter((obj,index)=>{
+      return index === hiThere.findIndex(o => obj.name === obj.name)
     })
+    console.log(hiThere)
+    let sum = 0;
 
-    // total.innerHTML hiThere.price
+    hiThere.forEach(function (e) {
+      let newCounting = new addingTotals();
+      let price = e.price;
+      price = price.replace("R", "");
+      price = Number(price);
+      useForTotals.push(price);
+      useForTotals = [...new Set(useForTotals)];
+      let totall = 0;
+      useForTotals.forEach(function randomFunctionName(e) {
+        totall += e;
+        this.increaseFunction();
+      }, newCounting);
+
+      // let quantities = [...document.querySelectorAll("#cartQuantity")];
+      // quantities.forEach((quan) => {
+      //   totall = quan.value * totall;
+      // });
+      total.innerHTML = "Total: " + "R" + totall;
+      
+    });
   }
 }
-// function addToCart(productId) {
-//   const product = productData.find((product) => product.id === productId)
-//   if(product){
-//     data.push(product)
-    
-//   }
-// }
 
-localStorage.setItem('cart',JSON.stringify(cartItems))
+// Constructor function to work with and manipulate the total in the cart
+function addingTotals() {
+  this.count = 0;
+  let numberInUse = this;
+  return {
+    increaseFunction: function () {
+      numberInUse.count++;
+    },
+    currentFunction: function () {
+      return numberInUse.count;
+    },
+    resetFunction: function () {
+      numberInUse.count = 0;
+    },
+  };
+}
+let quantityArray = [];
+function updating() {
+  let newCounting = new addingTotals();
+  let quantities = [...document.querySelectorAll("#cartQuantity")];
+  let totall = 0;
+  useForTotals.forEach(function randomFunctionName(e) {
+    totall += e;
+    this.increaseFunction();
+  }, newCounting);
+  quantities.forEach((quan) => {
+    if(quan.value <= 0){
+      quan.value = 1
+    }
+    let total = document.querySelector(".yesss");
+    console.log(quan.value)
+    let multiply = totall * quan.value;
+    console.log(multiply)
+    quantityArray.push(quan.value);
+    total.innerHTML = "Total: " + "R" + multiply.toFixed(2);
+    
+    
+  });
+}
+
+localStorage.setItem("cart", JSON.stringify(cartItems));
