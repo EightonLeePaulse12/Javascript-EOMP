@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products - Superior Clothing</title>
-    <link rel="shortcut icon" href="../images/images.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/images.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../style/style.css" />
     <link
       rel="stylesheet"
@@ -19,154 +19,253 @@
     />
   </head>
   <body>
-
     <header>
-        <nav id="navBack" class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"
-              ><img
-                src="https://i.postimg.cc/5NLT04Z0/logo-removebg-preview.png"
-                id="Logo"
-                alt="LOGO"
-            /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
+      <nav id="navBack" class="fixed-top navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="https://i.postimg.cc/5NLT04Z0/logo-removebg-preview.png"
+              id="Logo"
+              alt="LOGO"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul id="navItems" class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./admin.html">Admin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <!-- Button trigger modal -->
+<a data-bs-toggle="modal" id="backdropIssue" data-bs-target="#exampleModal">
+  <i class="fas fa fa-regular fa-cart-arrow-down"></i> Cart
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Cart</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Cart is empty -->
+        <div id="addHere" class="container border d-flex justify-content-between border-danger">
+          <div class="row">
+            <div class="col" id="cartTitle">Title</div>
+            <div class="col" id="cartImage">Image</div>
+            <div class="col" id="cartPrice">Price</div>
+            <div class="col d-flex align-items-center justify-content-between" id="actions">
+              Actions
+            </div>
+          </div>
+        </div>
+        <div id="modalBody">
+
+        </div>
+        <div class="container">
+        <div class="row row-col-3">
+<div class="col"></div>
+<div class="col"></div>
+<div class="col yesss">Total: </div>
+        </div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <figure class="text-center broo">
+        <blockquote class="blockquote">
+          <h3 class="fs-1 fw-bold">Products</h3>
+        </blockquote>
+      </figure>
+
+      <div class="container-fluid m-0 p-0 whyeven"></div>
+
+      <div class="card-group row row-cols-1 row-cols-md-3 mx-auto g-4" id="container2">
+        <!-- <!-- <div class="card"> -->
+          <!-- <img
+            id="productImage"
+            src="https://i.postimg.cc/qR9rPmCZ/Mens-Poker-Skeleton-Hand-Graphics-Street-100-Cotton-Short-Sleeve-T-Shirt-Black-S.png"
+            class="card-img-top"
+            alt="Black Tee"
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold" id="title">Black Cotton T-shirt</h5>
+            <p class="card-text" id="description">Black T-Shirt.</p>
+            <p class="card-text" id="price">R279.99</p>
+            <button type="button" id="addToCart" class="btn btn-info">
+              Add To Cart
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul id="navItems" class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Products</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="./admin.html">Admin</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="./about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="./contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#"><i class="fas fa fa-regular fa-cart-arrow-down"></i> Cart</a>
-                </li>
-              </ul>
-            </div>
           </div>
-        </nav>
-      </header>
-
-      <main>
-
-        
-
-        <figure class="text-center">
-            <blockquote class="blockquote">
-              <h3 class="fs-1 fw-bold">Products</h3>
-            </blockquote>
-          </figure>
-
-          <div class="container-fluid whyeven">
-          
+        </div>
+        <div class="card">
+          <img
+            id="productImage"
+            src="https://i.postimg.cc/k4WY5wpH/Drop-Shoulder-Hoodie-with-Slit-Beige-2-XL.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold" id="title">White Cotton hoodie</h5>
+            <p class="card-text" id="description">White Hoodie.</p>
+            <p class="card-text" id="price">R949.99</p>
+            <button type="button" id="addToCart" class="btn btn-info">
+              Add To Cart
+            </button>
           </div>
-
-          <div class="card-group mb-3">
-            <div class="card">
-              <img id="productImage" src="https://i.postimg.cc/qR9rPmCZ/Mens-Poker-Skeleton-Hand-Graphics-Street-100-Cotton-Short-Sleeve-T-Shirt-Black-S.png" class="card-img-top" alt="Black Tee">
-              <div class="card-body">
-                <h5 class="card-title fw-bold" id="title">Black Cotton T-shirt</h5>
-                <p class="card-text" id="description">Black T-Shirt.</p>
-                <p class="card-text" id="price">R279.99</p>
-                <button type="button" id="addToCart" class="btn btn-info">Add To Cart</button>
-              </div>
-            </div>
-            <div class="card">
-              <img id="productImage" src="https://i.postimg.cc/k4WY5wpH/Drop-Shoulder-Hoodie-with-Slit-Beige-2-XL.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title fw-bold" id="title">White Cotton hoodie</h5>
-                <p class="card-text" id="description">White Hoodie.</p>
-                <p class="card-text" id="price">R949.99</p>
-                <button type="button" id="addToCart" class="btn btn-info">Add To Cart</button>
-              </div>
-            </div>
-            <div class="card">
-              <img id="productImage" src="https://i.postimg.cc/0yqQMNjH/Chalecos-acolchados-con-capucha-y-sin-mangas-de-color-s-lido-con-bolsillo-y-cremallera-de-color-s-li.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title fw-bold" id="title">Black Sleeveless Puffer Jacket</h5>
-                <p class="card-text" id="description">Puffer Jacket.</p>
-                <p class="card-text" id="price">R449.99</p>
-                <button type="button" id="addToCart" class="btn btn-info">Add To Cart</button>
-              </div>
-            </div>
+        </div>
+        <div class="card">
+          <img
+            id="productImage"
+            src="https://i.postimg.cc/0yqQMNjH/Chalecos-acolchados-con-capucha-y-sin-mangas-de-color-s-lido-con-bolsillo-y-cremallera-de-color-s-li.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold" id="title">
+              Black Sleeveless Puffer Jacket
+            </h5>
+            <p class="card-text" id="description">Puffer Jacket.</p>
+            <p class="card-text" id="price">R449.99</p>
+            <button type="button" id="addToCart" class="btn btn-info">
+              Add To Cart
+            </button>
           </div>
+        </div>
+      </div>
 
-          <div class="card-group">
-            <div class="card">
-              <img id="productImage" src="https://i.postimg.cc/MZ5nPBGy/BOSS-Men-s-Tracksuit-Pants-Black.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title fw-bold" id="title">Black BOSS Tracksuit Pants</h5>
-                <p class="card-text" id="description">Black Tracksuit</p>
-                <p class="card-text" id="price">R379.99</p>
-                <button type="button" id="addToCart" class="btn btn-info">Add To Cart</button>
-              </div>
-            </div>
-            <div class="card">
-              <img id="productImage" src="https://i.postimg.cc/gJPPnjGk/Plaid-Button-Front-Brushed-Hooded-Jacket-Purple-2-XL.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title fw-bold" id="title">Hoodied Jersey</h5>
-                <p class="card-text" id="description">Buttoned Hoodied Jersey</p>
-                <p class="card-text" id="price">R749.99</p>
-                <button type="button" id="addToCart" class="btn btn-info">Add To Cart</button>
-              </div>
-            </div>
-            <div class="card">
-              <img id="productImage" src="https://i.postimg.cc/Jz1DB74x/Waist-Tie-Active-Shorts-Blue-12.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title fw-bold" id="title">Light grey shorts</h5>
-                <p class="card-text" id="description">Grey Shorts.</p>
-                <p class="card-text" id="price">R467.99</p>
-                <button type="button" id="addToCart" class="btn btn-info">Add To Cart</button>
-              </div>
-            </div>
+      <div class="card-group">
+        <div class="card">
+          <img
+            id="productImage"
+            src="https://i.postimg.cc/MZ5nPBGy/BOSS-Men-s-Tracksuit-Pants-Black.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold" id="title">
+              Black BOSS Tracksuit Pants
+            </h5>
+            <p class="card-text" id="description">Black Tracksuit</p>
+            <p class="card-text" id="price">R379.99</p>
+            <button type="button" id="addToCart" class="btn btn-info">
+              Add To Cart
+            </button>
           </div>
+        </div>
+        <div class="card">
+          <img
+            id="productImage"
+            src="https://i.postimg.cc/gJPPnjGk/Plaid-Button-Front-Brushed-Hooded-Jacket-Purple-2-XL.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold" id="title">Hoodied Jersey</h5>
+            <p class="card-text" id="description">Buttoned Hoodied Jersey</p>
+            <p class="card-text" id="price">R749.99</p>
+            <button type="button" id="addToCart" class="btn btn-info">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            id="productImage"
+            src="https://i.postimg.cc/Jz1DB74x/Waist-Tie-Active-Shorts-Blue-12.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold" id="title">Light grey shorts</h5>
+            <p class="card-text" id="description">Grey Shorts.</p>
+            <p class="card-text" id="price">R467.99</p>
+            <button type="button" id="addToCart" class="btn btn-info">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div> -->
 
-          <div class="card">
-            <div class="card-header fw-bold d-flex justify-content-center fs-3">
-              Cart
-            </div>
-            <div class="card-body" id="theDiv">
-              <!-- <blockquote class="blockquote mb-0">
+      <!-- <div class="card">
+        <div class="card-header fw-bold d-flex justify-content-center fs-3">
+          Cart
+        </div>
+        <div class="card-body" id="theDiv"> -->
+          <!-- <blockquote class="blockquote mb-0">
                 <p>A well-known quote, contained in a blockquote element.</p>
                 <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
               </blockquote> -->
-              <div class="row d-flex justify-content-between" id="irreplacableHeader">
-                <div class="text-decoration-underline col mb-3 fw-bold" id="itemm">Title</div>
-                <div class="text-decoration-underline col mb-3 fw-bold" id="itemm">Image</div>
-                <div class="text-decoration-underline col mb-3 fw-bold" id="itemm">Price</div>
-                <div class="text-decoration-underline mb-3 col fw-bold" id="itemm">Actions</div>
-              </div>
-              <div class="row d-flex justify-content-between">
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col">
-                  <h6 id="total">Total: </h6>
-                </div>
-              </div>
-              <div class="row d-flex justify-content-center">
-                <button id="Checkout" class="btn-danger">Checkout</button>
-              </div>   
-              <!-- <div class="row d-flex justify-content-between" id="cartDiv">
+          <!-- <div
+            class="row d-flex justify-content-between"
+            id="irreplacableHeader"
+          >
+            <div class="text-decoration-underline col mb-3 fw-bold" id="itemm">
+              Title
+            </div>
+            <div class="text-decoration-underline col mb-3 fw-bold" id="itemm">
+              Image
+            </div>
+            <div class="text-decoration-underline col mb-3 fw-bold" id="itemm">
+              Price
+            </div>
+            <div class="text-decoration-underline mb-3 col fw-bold" id="itemm">
+              Actions
+            </div>
+          </div>
+          <div class="row d-flex justify-content-between">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col">
+              <h6 id="total">Total:</h6>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <button id="Checkout" class="btn-danger">Checkout</button>
+          </div> -->
+          <!-- <div class="row d-flex justify-content-between" id="cartDiv">
                 <div class="col fw-bold d-flex align-items-center justify-content-center" id="productTitle">Title goes here</div>
                 <div class="col fw-bold d-flex align-items-center justify-content-center" id="img">img goes here</div>
                 <div class="col fw-bold d-flex align-items-center justify-content-center" id="productPrice">price goes here</div>
@@ -176,27 +275,74 @@
                   <button class="btn" id="add">+</button>
                 </div>
               </div> -->
-            </div>
-          </div>
-      </main>
+        </div>
+      </div>
+    </main>
 
-      <footer>
-        <div class="card text-center fs-2 fw-bold bg-white d-flex">
-            <div class="card-header">Connect with Superior Clothing</div>
-            <div class="card-body d-flex justify-content-between">
-              <h5 class="card-text phone"><i class="fas fa fa-solid fa-phone"></i> Contact Us</h5>
-              <h5 class="card-text facebook"><i class="fas fa fa-brands fa-facebook"></i> Facebook</h5>
-              <h5 class="card-text twitter"><i class="fas fa fa-brands fa-twitter"></i> Twitter</h5>
-              <h5 class="card-text instagram"><i class="fas fa fa-brands fa-instagram"></i> Instagram</h5>
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-            <div class="card-body d-flex justify-content-between">
-                <h5 class="card-text linkedin"><i class="fas fa fa-brands fa-linkedin"></i> LinkedIn</h5>
-                <h5 class="card-text telegram"><i class="fas fa fa-brands fa-telegram"></i> Telegram</h5>
-                <h5 class="card-text youtube"><i class="fas fa fa-brands fa-youtube"></i> YouTube</h5>
-                <h5 class="card-text envelope"><i class="fas fa fa-sharp fa-light fa-envelope"></i> E-mail Us</h5>
-              </div>
-          </div>
+    <footer><hr>
+      <div class="grid text-center d-flex justify-content-center m-4">
+        <div class="g-col-3 m-3"><h5 class="card-text phone p-3">
+          <i class="fas fa fa-solid fa-phone"></i> Contact Us
+        </h5>
+        <h5 class="card-text facebook p-3">
+          <i class="fas fa fa-brands fa-facebook"></i> Facebook
+        </h5>
+      </div>
+        <div class="g-col-3 m-3"><h5 class="card-text twitter p-3">
+          <i class="fas fa fa-brands fa-twitter"></i> Twitter
+        </h5>
+        <h5 class="card-text instagram p-3">
+          <i class="fas fa fa-brands fa-instagram"></i> Instagram
+        </h5>
+      </div>
+        <div class="g-col-3 m-3"><h5 class="card-text linkedin p-3">
+          <i class="fas fa fa-brands fa-linkedin"></i> LinkedIn
+        </h5>
+        <h5 class="card-text telegram p-3">
+          <i class="fas fa fa-brands fa-telegram"></i> Telegram
+        </h5>
+      </div>
+      <div class="g-col-3 m-3"><h5 class="card-text youtube p-3">
+        <i class="fas fa fa-brands fa-youtube"></i> YouTube
+      </h5>
+      <h5 class="card-text envelope p-3">
+        <i class="fas fa fa-sharp fa-light fa-envelope"></i> E-mail Us
+      </h5>
+    </div>
+      </div>
+
+      <!-- <div class="card text-center fs-2 fw-bold bg-white d-flex">
+        <div class="card-header">Connect with Superior Clothing</div>
+        <div class="card-body d-flex justify-content-between">
+          <h5 class="card-text phone">
+            <i class="fas fa fa-solid fa-phone"></i> Contact Us
+          </h5>
+          <h5 class="card-text facebook">
+            <i class="fas fa fa-brands fa-facebook"></i> Facebook
+          </h5>
+          <h5 class="card-text twitter">
+            <i class="fas fa fa-brands fa-twitter"></i> Twitter
+          </h5>
+          <h5 class="card-text instagram">
+            <i class="fas fa fa-brands fa-instagram"></i> Instagram
+          </h5> -->
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        <!-- </div>
+        <div class="card-body d-flex justify-content-between">
+          <h5 class="card-text linkedin">
+            <i class="fas fa fa-brands fa-linkedin"></i> LinkedIn
+          </h5>
+          <h5 class="card-text telegram">
+            <i class="fas fa fa-brands fa-telegram"></i> Telegram
+          </h5>
+          <h5 class="card-text youtube">
+            <i class="fas fa fa-brands fa-youtube"></i> YouTube
+          </h5>
+          <h5 class="card-text envelope">
+            <i class="fas fa fa-sharp fa-light fa-envelope"></i> E-mail Us
+          </h5>
+        </div>
+      </div> -->
     </footer>
     <script src="../script/code.js"></script>
     <script src="../script/products.js"></script>
