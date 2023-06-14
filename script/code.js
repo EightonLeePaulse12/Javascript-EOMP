@@ -13,6 +13,7 @@ let wrapper = document.querySelector("#products");
 // PRODUCTS ARRAY OF OBJECTS
 let products = [
   {
+    id:1,
     name: "Black Cotton T-shirt",
     image:
       "https://i.postimg.cc/qR9rPmCZ/Mens-Poker-Skeleton-Hand-Graphics-Street-100-Cotton-Short-Sleeve-T-Shirt-Black-S.png",
@@ -20,6 +21,7 @@ let products = [
     price: "R279.99",
   },
   {
+    
     name: "White Cotton hoodie",
     image:
       "https://i.postimg.cc/k4WY5wpH/Drop-Shoulder-Hoodie-with-Slit-Beige-2-XL.jpg",
@@ -119,16 +121,16 @@ function displayData() {
 // ADD BUTTON'S FUNCTION
 
 function addData() {
-  console.log("REACHED");
+  // console.log("REACHED");
   const productName = document.querySelector("#modalInputName2");
-  console.log(productName);
+  // console.log(productName);
   const productImage = document.querySelector("#modalInputImage2");
-  console.log(productImage);
+  // console.log(productImage);
   const productDesc = document.querySelector("#modalInputDesc2");
-  console.log(productDesc);
+  // console.log(productDesc);
   const productPrice = document.querySelector("#modalInputPrice2");
-  console.log(productPrice);
-  console.log(wrapper);
+  // console.log(productPrice);
+  // console.log(wrapper);
   // Save data
   let newContent = {
     name: productName.value,
@@ -156,6 +158,7 @@ function pleaseEdit() {
   saveButton.forEach((ja, i) => {
     console.log(ja);
     ja.addEventListener("click", (e) => {
+      e.preventDefault()
       // let index = saveButton.indexOf(e.target)
       let changeName = [...document.querySelectorAll("#modalInputName")];
       let changeImage = [...document.querySelectorAll("#modalInputImage")];
@@ -178,6 +181,7 @@ function pleaseEdit() {
 
       products[i] = newerContent;
       console.log(products);
+      localStorage.setItem("productData",JSON.stringify(products))
       wrapper.innerHTML = "";
       let modal = document.querySelector(".modal-backdrop");
       modal.style.display = "none";
@@ -194,7 +198,8 @@ function removeThingy() {
     nah.addEventListener("click", (e) => {
       let row = e.target.parentElement.parentElement;
       row.remove();
-      products.splice(products.name[i]);
+      let i = deleteButton.indexOf(event.target)
+      products.splice(i,1);
       localStorage.setItem("productData", JSON.stringify(products));
       console.log(products);
       wrapper.innerHTML = "";
