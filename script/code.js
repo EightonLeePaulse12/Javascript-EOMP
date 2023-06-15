@@ -191,24 +191,26 @@ function removeThingy() {
   });
 }
 
-const sortButton = document.querySelector('#sortProduct')
+// SORT BUTTON
 
-function sort(){
-  sortButton.addEventListener('click',()=>{
+const sortButton = document.querySelector("#sortProduct");
+
+function sort() {
+  sortButton.addEventListener("click", () => {
     products.sort((a, b) => {
-      if(a.name < b.name){
-          return -1
-      } else if(a.name > b.name){
-          return 1
-      } return 0
-  })
+      if (a.name < b.name) {
+        return -1;
+      } else if (a.name > b.name) {
+        return 1;
+      }
+      return 0;
+    });
 
-  wrapper.innerHTML = ''
-  displayData()
-})
+    wrapper.innerHTML = "";
+    displayData();
+  });
 }
 
-sort()
-
+sort();
 
 localStorage.setItem("productData", JSON.stringify(products));

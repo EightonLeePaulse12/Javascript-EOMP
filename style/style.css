@@ -54,11 +54,6 @@ body {
   background-color: white !important;
 }
 
-/* main{
-    height:100vh;
-    width:100%;
-} */
-
 #container {
   height: 140vh;
   overflow: hidden;
@@ -88,53 +83,36 @@ body {
   transition: ease-out 0.5s;
 }
 
-.text-center{
+.text-center {
   font-weight: bold !important;
 }
 
-.meme{
-  width:100%;
+.meme {
+  width: 100%;
 }
 
-#aboutC{
+#aboutC {
   margin: 40px;
 }
 
-#contact{
+#contact {
   margin-top: 1rem;
   padding: 25rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.tc{
+.tc {
   padding: 1rem;
 }
-/* .glow {
-  font-size: 80px;
-  padding: 1rem;
-  color: black;
-  text-align: center;
-  animation: glow 1s ease-in-out infinite alternate;
-}
 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0051ff, 0 0 40px #0051ff, 0 0 50px #0051ff, 0 0 60px #0051ff, 0 0 70px #0051ff;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #285aeb, 0 0 50px #285aeb, 0 0 60px #285aeb, 0 0 70px #285aeb, 0 0 80px #285aeb;
-  }
-} */
-
-#strawimage{
+#strawimage {
   object-fit: contain !important;
-  height:30rem !important;
-  width:100%;
+  height: 30rem !important;
+  width: 100%;
 }
 
-.aboutText{
-  font-size:2rem;
+.aboutText {
+  font-size: 2rem;
 }
 
 .mt-5 {
@@ -152,7 +130,7 @@ body {
   font-weight: bold;
   padding: 10px;
   transition: 0.2s;
-  margin-top:2rem;
+  margin-top: 2rem;
   border-radius: 10px;
 }
 
@@ -184,32 +162,9 @@ i {
 }
 .fa-instagram:hover {
   color: transparent;
-  background: -webkit-radial-gradient(
-    30% 107%,
-    circle,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-  background: -o-radial-gradient(
-    30% 107%,
-    circle,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
+  background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
   background: -webkit-radial-gradient(
     circle at 30% 107%,
     #fdf497 0%,
@@ -267,7 +222,7 @@ i {
 .phone {
   color: black;
   cursor: pointer;
-  font-size:1rem;
+  font-size: 1rem;
 }
 .phone:hover {
   color: rgb(0, 255, 0);
@@ -275,36 +230,13 @@ i {
 .instagram {
   color: black;
   cursor: pointer;
-  font-size:1rem;
+  font-size: 1rem;
 }
 .instagram:hover {
   color: transparent;
-  background: -webkit-radial-gradient(
-    30% 107%,
-    circle,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-  background: -o-radial-gradient(
-    30% 107%,
-    circle,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
+  background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
   background: -webkit-radial-gradient(
     circle at 30% 107%,
     #fdf497 0%,
@@ -319,7 +251,7 @@ i {
 .facebook {
   color: black;
   cursor: pointer;
-  font-size:1rem;
+  font-size: 1rem;
 }
 .facebook:hover {
   color: rgb(0, 106, 255);
@@ -327,7 +259,7 @@ i {
 .youtube {
   color: black;
   cursor: pointer;
-  font-size:1rem;
+  font-size: 1rem;
 }
 .youtube:hover {
   color: rgb(255, 0, 0);
@@ -335,7 +267,7 @@ i {
 .telegram {
   color: black;
   cursor: pointer;
-  font-size:1rem;
+  font-size: 1rem;
 }
 .telegram:hover {
   color: rgb(0, 94, 255);
@@ -343,7 +275,7 @@ i {
 .envelope {
   color: black;
   cursor: pointer;
-  font-size:1rem;
+  font-size: 1rem;
 }
 .envelope:hover {
   color: rgb(229, 255, 0);
@@ -351,7 +283,7 @@ i {
 .linkedin {
   color: black;
   cursor: pointer;
-  font-size:1rem;
+  font-size: 1rem;
 }
 .linkedin:hover {
   color: rgb(0, 179, 255);
@@ -359,7 +291,7 @@ i {
 .twitter {
   color: black;
   cursor: pointer;
-  font-size:1rem;
+  font-size: 1rem;
 }
 .twitter:hover {
   color: rgb(0, 183, 255);
@@ -397,14 +329,11 @@ i {
 #addToCart:hover {
   border: 2.9px solid black;
   font-weight: bold;
-  color:#ffffff !important;
+  color: #ffffff !important;
   background-color: rgb(19, 0, 159) !important;
   cursor: pointer;
   border: 2.9px solid #000000;
-  box-shadow: 0 0 5px #0003a5,
-              0 0 10px #0003a5,
-              0 0 25px #0003a5,
-              0 0 50px #0003a5;
+  box-shadow: 0 0 5px #0003a5, 0 0 10px #0003a5, 0 0 25px #0003a5, 0 0 50px #0003a5;
 }
 
 #addToCart:active {
@@ -425,48 +354,27 @@ i {
   background-color: rgb(0, 85, 255);
   border: 3px solid black;
 }
-#addProduct{
+#addProduct {
   background-color: #0003a5 !important;
-  border:1px solid black;
-  color:black !important;
-  font-weight:bold;
+  border: 1px solid black;
+  color: black !important;
+  font-weight: bold;
 }
-#addProduct:hover{
-  color:white !important;
-  box-shadow: 0 0 5px #0003a5,
-              0 0 10px #0003a5,
-              0 0 25px #0003a5,
-              0 0 50px #0003a5;
+#addProduct:hover {
+  color: white !important;
+  box-shadow: 0 0 5px #0003a5, 0 0 10px #0003a5, 0 0 25px #0003a5, 0 0 50px #0003a5;
 }
 
-#sortProduct{
+#sortProduct {
   background-color: #0003a5 !important;
-  border:1px solid black;
-  color:black !important;
-  font-weight:bold;
+  border: 1px solid black;
+  color: black !important;
+  font-weight: bold;
 }
-#sortProduct:hover{
-  color:white !important;
-  box-shadow: 0 0 5px #0003a5,
-              0 0 10px #0003a5,
-              0 0 25px #0003a5,
-              0 0 50px #0003a5;
+#sortProduct:hover {
+  color: white !important;
+  box-shadow: 0 0 5px #0003a5, 0 0 10px #0003a5, 0 0 25px #0003a5, 0 0 50px #0003a5;
 }
-/* #remove{
-  display:block !important;
-  margin:0 !important;
-  width:100% !important;
-  background-color: red;
-  color:black !important;
-  border:2px solid black !important;
-}
-#remove:hover{
-  color:white !important;
-  box-shadow: 0 0 5px red,
-              0 0 10px red,
-              0 0 25px red,
-              0 0 50px red;
-} */
 #quantity {
   padding: 1rem;
   display: flex;
@@ -560,7 +468,7 @@ i {
 
 .modal-body {
   display: flex;
-  padding:0 !important;
+  padding: 0 !important;
   flex-direction: column;
   justify-content: center;
 }
@@ -578,102 +486,86 @@ i {
   margin-bottom: 1rem;
 }
 
-.broo{
-  margin-top:7%;
+.broo {
+  margin-top: 7%;
 }
 
-#cartQuantity{
-  width:1rem;
-  height:1rem;
-  font-size:67%;
-  color:black !important;
+#cartQuantity {
+  width: 1rem;
+  height: 1rem;
+  font-size: 67%;
+  color: black !important;
   font-weight: bold;
 }
 
-#remove{
-  width:65% !important;
-  height:40%;
-  font-size:70% !important;
-  font-weight:bold !important;
-  background-color:red !important;
+#remove {
+  width: 65% !important;
+  height: 40%;
+  font-size: 70% !important;
+  font-weight: bold !important;
+  background-color: red !important;
 }
 
-#myPic{
+#myPic {
   object-fit: contain;
-  width:1.4rem;
-  height:2rem;
+  width: 1.4rem;
+  height: 2rem;
 }
 
-#almostDone{
+#almostDone {
   flex-wrap: nowrap;
 }
 
-#contact{
-  padding:2rem;
+#contact {
+  padding: 2rem;
 }
 
-#addHere{
+#addHere {
   display: flex !important;
-  flex-wrap:wrap !important;
+  flex-wrap: wrap !important;
   justify-content: space-between !important;
-  padding:0;
-  border:1px solid black !important;
+  padding: 0;
+  border: 1px solid black !important;
 }
 
-#cartTitle{
-  font-size:.8rem;
+#cartTitle {
+  font-size: 0.8rem;
 }
 
-#cartPrice{
-  font-size:.8rem;
+#cartPrice {
+  font-size: 0.8rem;
 }
 
-#actions{
-  font-size:.8rem;
+#actions {
+  font-size: 0.8rem;
 }
 
-#cartImage{
-  font-size:.8rem;
+#cartImage {
+  font-size: 0.8rem;
 }
 
-.yesss{
-  font-size:.8rem;
+.yesss {
+  font-size: 0.8rem;
 }
 
-#caroImg{
-  width:100%;
-  height:30rem;
-  padding:0 !important;
+#caroImg {
+  width: 100%;
+  height: 30rem;
+  padding: 0 !important;
   object-fit: contain;
 }
-#caroSlide{
-  color:black !important;
+#caroSlide {
+  color: black !important;
   background-color: black !important;
 }
 
-#carouselExampleCaptions{
-  margin-top:2rem;
-}
-/* #newTarget:hover{
-  color:white !important;
-  box-shadow: 0 0 5px rgb(0, 255, 149),
-              0 0 10px rgb(0, 255, 149),
-              0 0 25px rgb(0, 255, 149),
-              0 0 50px rgb(0, 255, 149);
-}
-#newTarget{
-  width:100% !important;
-  background-color: rgb(0, 255, 149);
-  color:black !important;
-  border:2px solid black !important;
-  font-weight: bold;
-  font-size:.8rem !important;
-} */
-
-#table{
-  width:100% !important;
+#carouselExampleCaptions {
+  margin-top: 2rem;
 }
 
+#table {
+  width: 100% !important;
+}
 
 @media (max-width: 992px) {
   #myContainer {
@@ -683,170 +575,150 @@ i {
   }
 }
 
-@media (max-width:378px){
-  #header{
-    font-size:4rem !important;
+@media (max-width: 378px) {
+  #header {
+    font-size: 4rem !important;
   }
 }
 
-@media (max-width:323px){
-  #navLogo{
-    padding:0 !important;
+@media (max-width: 323px) {
+  #navLogo {
+    padding: 0 !important;
   }
-  #Logo{
-    width:100% !important;
-  }
-}
-
-@media (max-width:293px){
-  #header{
-    font-size:3rem !important;
+  #Logo {
+    width: 100% !important;
   }
 }
 
-@media (max-width:536px){
-  #container2{
-    margin:0 !important;
-    width:100% !important;
+@media (max-width: 293px) {
+  #header {
+    font-size: 3rem !important;
   }
 }
 
-@media (max-width:470px){
+@media (max-width: 536px) {
+  #container2 {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 470px) {
   .phone {
-    font-size:.7rem;
+    font-size: 0.7rem;
   }
   .twitter {
-    font-size:.7rem;
+    font-size: 0.7rem;
   }
   .instagram {
-    font-size:.7rem;
+    font-size: 0.7rem;
   }
   .linkedin {
-    font-size:.7rem;
+    font-size: 0.7rem;
   }
   .youtube {
-    font-size:.7rem;
+    font-size: 0.7rem;
   }
   .telegram {
-    font-size:.7rem;
+    font-size: 0.7rem;
   }
   .envelope {
-    font-size:.7rem;
+    font-size: 0.7rem;
   }
   .facebook {
-    font-size:.7rem;
+    font-size: 0.7rem;
   }
 }
 
-@media (max-width:992px){
-  
-  
+@media (max-width: 992px) {
   #navItems li:nth-child(1) {
     border-bottom: none;
   }
-  
+
   #navItems li:hover {
     border-bottom: none;
   }
 }
 
-@media (max-width:383px){
+@media (max-width: 383px) {
   .phone {
-    font-size:.3rem;
+    font-size: 0.3rem;
   }
   .twitter {
-    font-size:.3rem;
+    font-size: 0.3rem;
   }
   .instagram {
-    font-size:.3rem;
+    font-size: 0.3rem;
   }
   .linkedin {
-    font-size:.3rem;
+    font-size: 0.3rem;
   }
   .youtube {
-    font-size:.5rem;
+    font-size: 0.5rem;
   }
   .telegram {
-    font-size:.3rem;
+    font-size: 0.3rem;
   }
   .envelope {
-    font-size:.3rem;
+    font-size: 0.3rem;
   }
   .facebook {
-    font-size:.3rem;
+    font-size: 0.3rem;
   }
-  #container2{
-    height:100% !important;
-  }
-}
-
-@media (max-width:510px){
-  #remove{
-    width:55px !important;
-  }
-  #newTarget{
-    height:35px;
+  #container2 {
+    height: 100% !important;
   }
 }
 
-/* @media (max-width:881px){
-  #newTarget{
-    width:11rem !important;
-    background-color: rgb(0, 255, 149);
-  color:black !important;
-  border:2px solid black !important;
-  font-weight: bold;
-  font-size:.8rem !important;
+@media (max-width: 510px) {
+  #remove {
+    width: 55px !important;
   }
-  #newTarget:hover{
-    color:white !important;
-    box-shadow: 0 0 5px rgb(0, 255, 149),
-                0 0 10px rgb(0, 255, 149),
-                0 0 25px rgb(0, 255, 149),
-                0 0 50px rgb(0, 255, 149);
+  #newTarget {
+    height: 35px;
   }
 }
 
-@media (max-width:527px){
-  #newTarget{
-    width:3.5rem !important;
-  }
-} */
-
-@media (max-width:411px){
-  #empty{
-    width:1px !important;
+@media (max-width: 411px) {
+  #empty {
+    width: 1px !important;
   }
 }
 
-@media (max-width:752px){
-  #strawImage{
-    height:10rem;
+@media (max-width: 752px) {
+  #strawImage {
+    height: 10rem;
   }
 }
 
-@media (max-width:462px){
-  #strawImage{
-    height:5rem;
+@media (max-width: 462px) {
+  #strawImage {
+    height: 5rem;
   }
 }
 
-@media (max-width:515px){
-  #aboutC{
+@media (max-width: 515px) {
+  #aboutC {
     flex-direction: column !important;
   }
-  #caroImg{
-    width:100% !important;
+  #caroImg {
+    width: 100% !important;
   }
-  #thatImg{
-    padding:0 !important;
-    width:100% !important;
+  #thatImg {
+    padding: 0 !important;
+    width: 100% !important;
   }
 }
 
-@media (max-width:320px){
-  #strawimage{
-    height:5rem;
+@media (max-width: 320px) {
+  #strawimage {
+    height: 5rem;
     object-fit: cover;
+  }
+}
+
+@media (max-width: 1436px) {
+  .broo {
+    margin-top: 10rem;
   }
 }
