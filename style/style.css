@@ -643,6 +643,7 @@ i {
 #caroImg{
   width:100%;
   height:30rem;
+  padding:0 !important;
   object-fit: contain;
 }
 #caroSlide{
@@ -827,5 +828,25 @@ i {
 @media (max-width:462px){
   #strawImage{
     height:5rem;
+  }
+}
+
+@media (max-width:515px){
+  #aboutC{
+    flex-direction: column !important;
+  }
+  #caroImg{
+    width:100% !important;
+  }
+  #thatImg{
+    padding:0 !important;
+    width:100% !important;
+  }
+}
+
+@media (max-width:320px){
+  #strawimage{
+    height:5rem;
+    object-fit: cover;
   }
 }
