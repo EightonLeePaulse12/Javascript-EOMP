@@ -63,7 +63,9 @@ function displayData() {
     wrapper.innerHTML += `
     <tr>
               <th scope="row" id="adminName">${product.name}</th>
-              <td><img id="adminImage" src="${product.image}"></td>
+              <td><img loading="lazy" id="adminImage" src="${
+                product.image
+              }"></td>
               <td id="adminPrice">${product.price}</td>
               <td>
               <button type="button" id="newTarget" class="btn btn-primary" data-bs-toggle="modal" data-bs-target='#addModal${

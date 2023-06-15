@@ -27,6 +27,7 @@ function displayProducts() {
       <div class="col">
         <div class="card h-100 shadow">
           <img
+          loading="lazy"
             id="productImage"
             src="${gimme.image}"
             class="card-img-top"
