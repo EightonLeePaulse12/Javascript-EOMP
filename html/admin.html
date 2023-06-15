@@ -22,7 +22,7 @@
     <header>
       <nav id="navBack" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="../index.html"
             ><img
               src="https://i.postimg.cc/5NLT04Z0/logo-removebg-preview.png"
               id="Logo"
@@ -75,7 +75,7 @@
       </figure>
 
       <div class="container-fluid" id="addItemsHere">
-        <table class="table">
+        <table id="table" class="table">
           <thead>
             <tr>
               <th scope="col">Product</th>
@@ -86,11 +86,13 @@
                 <button
                   type="button"
                   class="btn btn-primary"
+                  id="addProduct"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 >
                   Add Product
                 </button>
+                
 
                 <!-- Modal -->
                 <div
@@ -158,6 +160,13 @@
                     </div>
                   </div>
                 </div>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="sortProduct"
+                >
+                  Sort
+                </button>
               </th>
             </tr>
           </thead>
@@ -222,41 +231,36 @@
     </main>
 
     <footer>
-      <div class="card text-center fs-2 fw-bold bg-white d-flex">
-        <div class="card-header">Connect with Superior Clothing</div>
-        <div class="card-body d-flex justify-content-between">
-          <h5 class="card-text phone">
-            <i class="fas fa fa-solid fa-phone"></i> Contact Us
-          </h5>
-          <h5 class="card-text facebook">
-            <i class="fas fa fa-brands fa-facebook"></i> Facebook
-          </h5>
-          <h5 class="card-text twitter">
-            <i class="fas fa fa-brands fa-twitter"></i> Twitter
-          </h5>
-          <h5 class="card-text instagram">
-            <i class="fas fa fa-brands fa-instagram"></i> Instagram
-          </h5>
-          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-        </div>
-        <div class="card-body d-flex justify-content-between">
-          <h5 class="card-text linkedin">
-            <i class="fas fa fa-brands fa-linkedin"></i> LinkedIn
-          </h5>
-          <h5 class="card-text telegram">
-            <i class="fas fa fa-brands fa-telegram"></i> Telegram
-          </h5>
-          <h5 class="card-text youtube">
-            <i class="fas fa fa-brands fa-youtube"></i> YouTube
-          </h5>
-          <h5 class="card-text envelope">
-            <i class="fas fa fa-sharp fa-light fa-envelope"></i> E-mail Us
-          </h5>
-          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-        </div>
-        <!-- <div class="card-footer text-body-secondary">
-              2 days ago
-            </div> -->
+      <h3 class="text-center m-3">Connect with us</h3>
+      <div class="grid text-center d-flex justify-content-center m-4">
+        <div class="g-col-3 g-col-md-3 m-3"><h5 class="card-text phone p-3">
+          <i class="fas fa fa-solid fa-phone"></i> Contact Us
+        </h5>
+        <h5 class="card-text facebook p-3">
+          <i class="fas fa fa-brands fa-facebook"></i> Facebook
+        </h5>
+      </div>
+        <div class="g-col-3 g-col-md-3 m-3"><h5 class="card-text twitter p-3">
+          <i class="fas fa fa-brands fa-twitter"></i> Twitter
+        </h5>
+        <h5 class="card-text instagram p-3">
+          <i class="fas fa fa-brands fa-instagram"></i> Instagram
+        </h5>
+      </div>
+        <div class="g-col-3 g-col-md-3 m-3"><h5 class="card-text linkedin p-3">
+          <i class="fas fa fa-brands fa-linkedin"></i> LinkedIn
+        </h5>
+        <h5 class="card-text telegram p-3">
+          <i class="fas fa fa-brands fa-telegram"></i> Telegram
+        </h5>
+      </div>
+      <div class="g-col-3 g-col-md-3 m-3"><h5 class="card-text youtube p-3">
+        <i class="fas fa fa-brands fa-youtube"></i> YouTube
+      </h5>
+      <h5 class="card-text envelope p-3">
+        <i class="fas fa fa-sharp fa-light fa-envelope"></i> E-mail Us
+      </h5>
+    </div>
       </div>
     </footer>
 

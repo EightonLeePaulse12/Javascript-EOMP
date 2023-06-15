@@ -70,12 +70,12 @@ function addToCart() {
       };
       cartItems.push(product);
       localStorage.setItem("cart", JSON.stringify(cartItems));
-      cartItems = cartItems.filter((obj,index)=>{
-        return index === cartItems.findIndex(o => obj.name === obj.name)
-      })
+      // cartItems = cartItems.filter((obj,index)=>{
+      //   return index === cartItems.findIndex(o => obj.name === obj.name)
+      // })
       cartItems.forEach((luffy, i) => {
         let newData = `
-        <div class="row">
+        <div class="row" id="almostDone">
         <div class="col d-flex align-items-center justify-content-between" id="cartTitle">${luffy.name}</div>
         <div class="col d-flex align-items-center justify-content-between" id="cartImage"><img id="myPic" src="${luffy.image}"></div>
         <div class="col d-flex align-items-center justify-content-between" id="cartPrice">${luffy.price}</div>
@@ -89,6 +89,7 @@ function addToCart() {
         let addHere = document.querySelector("#exampleModal");
         putHere.innerHTML += newData;
         updateTotal();
+        removeFromCart()
       });
     });
   });
@@ -102,9 +103,9 @@ function updateTotal() {
   } else {
     const total = document.querySelector(".yesss");
     let hiThere = JSON.parse(localStorage.getItem("cart"));
-    hiThere = hiThere.filter((obj,index)=>{
-      return index === hiThere.findIndex(o => obj.name === obj.name)
-    })
+    // hiThere = hiThere.filter((obj,index)=>{
+    //   return index === hiThere.findIndex(o => obj.name === obj.name)
+    // })
     console.log(hiThere)
     let sum = 0;
 
@@ -121,11 +122,16 @@ function updateTotal() {
         this.increaseFunction();
       }, newCounting);
 
+      console.log(typeof price)
+      console.log(price)
+      console.log(totall)
+      console.log(typeof totall)
+
       // let quantities = [...document.querySelectorAll("#cartQuantity")];
       // quantities.forEach((quan) => {
       //   totall = quan.value * totall;
       // });
-      total.innerHTML = "Total: " + "R" + totall;
+      total.innerHTML = "Total: " + "R" +  totall;
       
     });
   }
@@ -165,10 +171,25 @@ function updating() {
     let multiply = totall * quan.value;
     console.log(multiply)
     quantityArray.push(quan.value);
-    total.innerHTML = "Total: " + "R" + multiply.toFixed(2);
-    
-    
+    total.innerHTML = ''
+    total.innerHTML = "Total: " + "R" + multiply;
   });
 }
 
-localStorage.setItem("cart", JSON.stringify(cartItems));
+function removeFromCart(){
+  const removeButtons = [...document.querySelectorAll("#remove")]
+
+  removeButtons.forEach((data,i)=>{
+    data.addEventListener('click',(e)=>{
+      // console.log(cart[i])
+      let i = removeButtons.indexOf(e.target);
+      let target = e.target.parentElement.parentElement
+      target.remove()
+      cartItems.splice(i)
+      localStorage.setItem("cart",JSON.stringify(cartItems))
+    })
+  })
+}
+
+let cart = localStorage.setItem("cart", JSON.stringify(cartItems));
+
