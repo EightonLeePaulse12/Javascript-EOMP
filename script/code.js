@@ -13,7 +13,6 @@ let wrapper = document.querySelector("#products");
 // PRODUCTS ARRAY OF OBJECTS
 let products = [
   {
-    id: 1,
     name: "Black Cotton T-shirt",
     image:
       "https://i.postimg.cc/qR9rPmCZ/Mens-Poker-Skeleton-Hand-Graphics-Street-100-Cotton-Short-Sleeve-T-Shirt-Black-S.png",
@@ -67,8 +66,7 @@ function displayData() {
               <td><img id="adminImage" src="${product.image}"></td>
               <td id="adminPrice">${product.price}</td>
               <td>
-              <td>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target='#addModal${
+              <button type="button" id="newTarget" class="btn btn-primary" data-bs-toggle="modal" data-bs-target='#addModal${
                 index + 1
               }'>
                 Edit
@@ -192,5 +190,25 @@ function removeThingy() {
     });
   });
 }
+
+const sortButton = document.querySelector('#sortProduct')
+
+function sort(){
+  sortButton.addEventListener('click',()=>{
+    products.sort((a, b) => {
+      if(a.name < b.name){
+          return -1
+      } else if(a.name > b.name){
+          return 1
+      } return 0
+  })
+
+  wrapper.innerHTML = ''
+  displayData()
+})
+}
+
+sort()
+
 
 localStorage.setItem("productData", JSON.stringify(products));

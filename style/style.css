@@ -39,7 +39,7 @@ body {
 #navItems li {
   margin: 0 11px !important;
   cursor: pointer;
-  transition: 0.19s;
+  transition: 0.19s alternate;
 }
 
 #navItems li:nth-child(1) {
@@ -64,9 +64,10 @@ body {
   overflow: hidden;
   background-size: contain;
   background-position: center center;
-  background-image: url("https://i.postimg.cc/sgcHQSZX/Photo-by-Ciaran-O-Brien-on-Unsplash.jpg");
+  background-attachment: fixed;
+  background-image: url("https://i.postimg.cc/vmZz9pSK/empty-dark-room-modern-futuristic.jpg");
   background-color: transparent;
-  object-fit: cover;
+  background-size: cover;
 }
 
 #headingMain {
@@ -78,17 +79,66 @@ body {
   width: 100% !important;
   height: 100% !important;
   font-size: 5.4rem !important;
-  color: black;
-  text-shadow: 2px 2px white;
+  color: #0051ff;
+  text-shadow: 2px 2px rgb(245, 241, 241);
 }
 
-.row {
-  width: 100%;
-  height: 100%;
+#header:hover {
+  transform: scale(1.1);
+  transition: ease-out 0.5s;
+}
+
+.text-center{
+  font-weight: bold !important;
+}
+
+.meme{
+  width:100%;
+}
+
+#aboutC{
+  margin: 40px;
+}
+
+#contact{
+  margin-top: 1rem;
+  padding: 25rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.tc{
+  padding: 1rem;
+}
+/* .glow {
+  font-size: 80px;
+  padding: 1rem;
+  color: black;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0051ff, 0 0 40px #0051ff, 0 0 50px #0051ff, 0 0 60px #0051ff, 0 0 70px #0051ff;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #285aeb, 0 0 50px #285aeb, 0 0 60px #285aeb, 0 0 70px #285aeb, 0 0 80px #285aeb;
+  }
+} */
+
+#strawimage{
+  object-fit: contain !important;
+  height:30rem !important;
+  width:100%;
+}
+
+.aboutText{
+  font-size:2rem;
 }
 
 .mt-5 {
-  color: black;
+  color: #0051ff;
   text-shadow: 2px 2px white;
   /* font-family: cursive; */
   border-bottom: 4.5px solid #0051ff !important;
@@ -102,6 +152,7 @@ body {
   font-weight: bold;
   padding: 10px;
   transition: 0.2s;
+  margin-top:2rem;
   border-radius: 10px;
 }
 
@@ -216,6 +267,7 @@ i {
 .phone {
   color: black;
   cursor: pointer;
+  font-size:1rem;
 }
 .phone:hover {
   color: rgb(0, 255, 0);
@@ -223,6 +275,7 @@ i {
 .instagram {
   color: black;
   cursor: pointer;
+  font-size:1rem;
 }
 .instagram:hover {
   color: transparent;
@@ -266,6 +319,7 @@ i {
 .facebook {
   color: black;
   cursor: pointer;
+  font-size:1rem;
 }
 .facebook:hover {
   color: rgb(0, 106, 255);
@@ -273,6 +327,7 @@ i {
 .youtube {
   color: black;
   cursor: pointer;
+  font-size:1rem;
 }
 .youtube:hover {
   color: rgb(255, 0, 0);
@@ -280,6 +335,7 @@ i {
 .telegram {
   color: black;
   cursor: pointer;
+  font-size:1rem;
 }
 .telegram:hover {
   color: rgb(0, 94, 255);
@@ -287,6 +343,7 @@ i {
 .envelope {
   color: black;
   cursor: pointer;
+  font-size:1rem;
 }
 .envelope:hover {
   color: rgb(229, 255, 0);
@@ -294,6 +351,7 @@ i {
 .linkedin {
   color: black;
   cursor: pointer;
+  font-size:1rem;
 }
 .linkedin:hover {
   color: rgb(0, 179, 255);
@@ -301,6 +359,7 @@ i {
 .twitter {
   color: black;
   cursor: pointer;
+  font-size:1rem;
 }
 .twitter:hover {
   color: rgb(0, 183, 255);
@@ -324,6 +383,12 @@ i {
   object-fit: contain;
 }
 
+#productImage:hover {
+  transform: scale(1.05);
+  transition: ease-out 0.5s;
+  opacity: (1);
+}
+
 #addToCart {
   border: 2.9px solid black;
   font-weight: bold;
@@ -332,10 +397,16 @@ i {
 #addToCart:hover {
   border: 2.9px solid black;
   font-weight: bold;
-  color:#420fea !important;
-  background-color: black !important;
+  color:#ffffff !important;
+  background-color: rgb(19, 0, 159) !important;
   cursor: pointer;
+  border: 2.9px solid #000000;
+  box-shadow: 0 0 5px #0003a5,
+              0 0 10px #0003a5,
+              0 0 25px #0003a5,
+              0 0 50px #0003a5;
 }
+
 #addToCart:active {
   opacity: 0.8;
 }
@@ -354,6 +425,48 @@ i {
   background-color: rgb(0, 85, 255);
   border: 3px solid black;
 }
+#addProduct{
+  background-color: #0003a5 !important;
+  border:1px solid black;
+  color:black !important;
+  font-weight:bold;
+}
+#addProduct:hover{
+  color:white !important;
+  box-shadow: 0 0 5px #0003a5,
+              0 0 10px #0003a5,
+              0 0 25px #0003a5,
+              0 0 50px #0003a5;
+}
+
+#sortProduct{
+  background-color: #0003a5 !important;
+  border:1px solid black;
+  color:black !important;
+  font-weight:bold;
+}
+#sortProduct:hover{
+  color:white !important;
+  box-shadow: 0 0 5px #0003a5,
+              0 0 10px #0003a5,
+              0 0 25px #0003a5,
+              0 0 50px #0003a5;
+}
+/* #remove{
+  display:block !important;
+  margin:0 !important;
+  width:100% !important;
+  background-color: red;
+  color:black !important;
+  border:2px solid black !important;
+}
+#remove:hover{
+  color:white !important;
+  box-shadow: 0 0 5px red,
+              0 0 10px red,
+              0 0 25px red,
+              0 0 50px red;
+} */
 #quantity {
   padding: 1rem;
   display: flex;
@@ -447,6 +560,7 @@ i {
 
 .modal-body {
   display: flex;
+  padding:0 !important;
   flex-direction: column;
   justify-content: center;
 }
@@ -486,8 +600,24 @@ i {
 
 #myPic{
   object-fit: contain;
-  width:2rem;
-  height:3rem;
+  width:1.4rem;
+  height:2rem;
+}
+
+#almostDone{
+  flex-wrap: nowrap;
+}
+
+#contact{
+  padding:2rem;
+}
+
+#addHere{
+  display: flex !important;
+  flex-wrap:wrap !important;
+  justify-content: space-between !important;
+  padding:0;
+  border:1px solid black !important;
 }
 
 #cartTitle{
@@ -510,10 +640,192 @@ i {
   font-size:.8rem;
 }
 
+#caroImg{
+  width:100%;
+  height:30rem;
+  object-fit: contain;
+}
+#caroSlide{
+  color:black !important;
+  background-color: black !important;
+}
+
+#carouselExampleCaptions{
+  margin-top:2rem;
+}
+/* #newTarget:hover{
+  color:white !important;
+  box-shadow: 0 0 5px rgb(0, 255, 149),
+              0 0 10px rgb(0, 255, 149),
+              0 0 25px rgb(0, 255, 149),
+              0 0 50px rgb(0, 255, 149);
+}
+#newTarget{
+  width:100% !important;
+  background-color: rgb(0, 255, 149);
+  color:black !important;
+  border:2px solid black !important;
+  font-weight: bold;
+  font-size:.8rem !important;
+} */
+
+#table{
+  width:100% !important;
+}
+
+
 @media (max-width: 992px) {
   #myContainer {
     display: flex !important;
     flex-direction: column !important;
     width: 100% !important;
+  }
+}
+
+@media (max-width:378px){
+  #header{
+    font-size:4rem !important;
+  }
+}
+
+@media (max-width:323px){
+  #navLogo{
+    padding:0 !important;
+  }
+  #Logo{
+    width:100% !important;
+  }
+}
+
+@media (max-width:293px){
+  #header{
+    font-size:3rem !important;
+  }
+}
+
+@media (max-width:536px){
+  #container2{
+    margin:0 !important;
+    width:100% !important;
+  }
+}
+
+@media (max-width:470px){
+  .phone {
+    font-size:.7rem;
+  }
+  .twitter {
+    font-size:.7rem;
+  }
+  .instagram {
+    font-size:.7rem;
+  }
+  .linkedin {
+    font-size:.7rem;
+  }
+  .youtube {
+    font-size:.7rem;
+  }
+  .telegram {
+    font-size:.7rem;
+  }
+  .envelope {
+    font-size:.7rem;
+  }
+  .facebook {
+    font-size:.7rem;
+  }
+}
+
+@media (max-width:992px){
+  
+  
+  #navItems li:nth-child(1) {
+    border-bottom: none;
+  }
+  
+  #navItems li:hover {
+    border-bottom: none;
+  }
+}
+
+@media (max-width:383px){
+  .phone {
+    font-size:.3rem;
+  }
+  .twitter {
+    font-size:.3rem;
+  }
+  .instagram {
+    font-size:.3rem;
+  }
+  .linkedin {
+    font-size:.3rem;
+  }
+  .youtube {
+    font-size:.5rem;
+  }
+  .telegram {
+    font-size:.3rem;
+  }
+  .envelope {
+    font-size:.3rem;
+  }
+  .facebook {
+    font-size:.3rem;
+  }
+  #container2{
+    height:100% !important;
+  }
+}
+
+@media (max-width:510px){
+  #remove{
+    width:55px !important;
+  }
+  #newTarget{
+    height:35px;
+  }
+}
+
+/* @media (max-width:881px){
+  #newTarget{
+    width:11rem !important;
+    background-color: rgb(0, 255, 149);
+  color:black !important;
+  border:2px solid black !important;
+  font-weight: bold;
+  font-size:.8rem !important;
+  }
+  #newTarget:hover{
+    color:white !important;
+    box-shadow: 0 0 5px rgb(0, 255, 149),
+                0 0 10px rgb(0, 255, 149),
+                0 0 25px rgb(0, 255, 149),
+                0 0 50px rgb(0, 255, 149);
+  }
+}
+
+@media (max-width:527px){
+  #newTarget{
+    width:3.5rem !important;
+  }
+} */
+
+@media (max-width:411px){
+  #empty{
+    width:1px !important;
+  }
+}
+
+@media (max-width:752px){
+  #strawImage{
+    height:10rem;
+  }
+}
+
+@media (max-width:462px){
+  #strawImage{
+    height:5rem;
   }
 }
